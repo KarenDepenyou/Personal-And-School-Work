@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Delius+Unicase);
+h1 {
+	color: #8CFF38;
+	font-style: bold;
+	font-size: 50px;
+	font-family: 'Delius Unicase', cursive;
+}
+h2 {
+	color: #8CFF38;
+	font-style: bold;
+	font-size: 30px;
+	font-family: 'Delius Unicase', cursive;
+}
+#gamespace {
+	/*To hide the horizontal scroller appearing during the animation*/
+	width: 100;
+	margin: auto;
+	border-style: solid;
+    border-width: 5px;
+	border-color: #ADFF2F;
+	overflow: hidden;
+}
+#girl {
+  position:absolute;
+  /* bottom:75%;
+  left:10%; */
+}
+.carrot1 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 13s linear infinite;
+	-moz-animation: movecarrot 13s linear infinite;
+	-o-animation: movecarrot 13s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+.carrot2 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 15s linear infinite;
+	-moz-animation: movecarrot 15s linear infinite;
+	-o-animation: movecarrot 15s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+.carrot3 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 10s linear infinite;
+	-moz-animation: movecarrot 10s linear infinite;
+	-o-animation: movecarrot 10s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+.carrot4 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 25s linear infinite;
+	-moz-animation: movecarrot 25s linear infinite;
+	-o-animation: movecarrot 25s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+.carrot5 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 20s linear infinite;
+	-moz-animation: movecarrot 20s linear infinite;
+	-o-animation: movecarrot 20s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+.carrot6 {
+	height: 15%;
+	position: absolute;
+	-webkit-animation: movecarrot 9s linear infinite;
+	-moz-animation: movecarrot 9s linear infinite;
+	-o-animation: movecarrot 9s linear infinite;
+	carrot.push(("105px", "105px"))
+}
+#popsicle {
+	height: 12%;
+	position: absolute;
+	-webkit-animation: movepopsicle 11s linear infinite;
+	-moz-animation: movepopsicle 11s linear infinite;
+	-o-animation: movepopsicle 11s linear infinite;
+	enemy.push(("75px", "105px"))
+}
+#icecream {
+	height: 12%;
+	position: absolute;
+	-webkit-animation: moveic 20s linear infinite;
+	-moz-animation: moveic 20s linear infinite;
+	-o-animation: moveic 20s linear infinite;
+	enemy.push(("75px", "105px"))
+}
+.ground {
+	background: #32CD32;
+	height: 20%;
+	position: absolute;
+	bottom: -15%;
+	right: 0.3%;
+	left:0.3%;
+}
+/* .animation {
+  width: 190px;
+  height: 200px;
+  margin: -20% auto;
+  background: url('https://martinyi89.files.wordpress.com/2014/01/header.png') left center;
+  animation: play .8s steps(10) infinite;
+} */
+#clouds{
+	padding: 100px 0;
+	background: #AFEEEE;
+	background: -webkit-linear-gradient(top, #AFEEEE 0%, #fff 100%);
+	background: -linear-gradient(top, #AFEEEE 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #AFEEEE 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+.x6 {
+	left: -100px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+.x7 {
+	left: -300px; top: -250px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 17s linear infinite;
+	-moz-animation: moveclouds 17s linear infinite;
+	-o-animation: moveclouds 17s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-webkit-keyframes movecarrot {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-moz-keyframes movecarrot {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-o-keyframes movecarrot {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-webkit-keyframes movepopsicle {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-moz-keyframes movepopsicle {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-o-keyframes movepopsicle {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+
+
+@-webkit-keyframes moveic {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-moz-keyframes moveic {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}
+@-o-keyframes moveic {
+	0% {margin-left: 950px;}
+	100% {margin-left: -950px;}
+}

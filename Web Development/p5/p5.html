@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bingo Board</title>
+    <link rel="stylesheet" href="p5.css">
+    <script src="p5.js"></script>
+</head>
+<body onload="newTable()">
+<form>
+    <fieldset>
+        <legend><b>Bingo Board Controls</b></legend>
+        <table id="selection">
+            <tr id="option">
+                <td>
+                    <label>Size:<input type="text" id="boxSize" value="5" size="5"></label>
+                </td>
+                <td>
+                    <label>
+                        <label><input type="radio" name="CellColor" id="Red" checked="checked" onchange="changeColor()">
+                            Red </label><br/>
+                        <label><input type="radio" name="CellColor" id="Green" onchange="changeColor()"> Green
+                        </label><br/>
+                        <label><input type="radio" name="CellColor" id="Blue" onchange="changeColor()"> Blue </label><br/>
+                    </label>
+                </td>
+                <td>
+                    <form>
+                        <label>Font:
+                            <select name="fType" class="style" onchange="fontType()">
+                                <option selected="selected" id="arial" onchange="fontType()">Arial</option>
+                                <option id="roman" onchange="fontType()">Times New Roman</option>
+                                <option id="courier" onchange="fontType()">Courier New</option>
+                            </select>
+                        </label>
+                    </form>
+                    <br/>
+                    <label>Font Size:</label>
+                    <select name="size" onchange="fSize()">
+                        <option  id="ten" onchange="fSize()">10px</option>
+                        <option selected="selected" id="twenty" onchange="fSize()">20px</option>
+                        <option id="thirty" onchange="fSize()">30px</option>
+                    </select>
+                </td>
+                <td id="leaveOut">
+                    Exclude: <br/>
+                    <label><input type="checkbox" onchange="excludeThis()"/>Horizontal</label><br/>
+                    <label><input type="checkbox" onchange="excludeThis()"/>Vertical</label><br/>
+                    <label><input type="checkbox" onchange="excludeThis()"/>Diagonal</label><br/>
+                </td>
+            </tr>
+        </table>
+        <button class="click" type="button" onclick="newTable()">Update Bingo Board</button>
+        <button class="click" type="button" onclick="setSquares()">Call</button>
+        <button class="click" type="button" onclick="resetNumbers()">Reset</button>
+    </fieldset>
+</form>
+<div id="bBoard"></div>
+<p id="callingNumbersBoi"></p>
+
+<!--<script type="text/javascript" src="p5.js"></script>-->
+</body>
+</html>

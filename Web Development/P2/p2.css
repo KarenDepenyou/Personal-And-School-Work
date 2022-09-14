@@ -1,0 +1,85 @@
+body{
+    background: url("DNClogo.png") repeat;
+}
+
+h1{
+    text-align: center;
+}
+
+h2::first-letter{
+    font-size: 200%;
+    text-transform: capitalize;
+}
+
+
+td.big{
+    border: 10px ridge orange;
+    font-family: Copperplate;
+    background-color: red;
+    width: 100%;
+    align-content: center;
+
+
+}
+
+
+td #left{
+    border: 10px ridge orange;
+    font-family: Impact;
+    background-color: white;
+    float: left;
+    min-width: 490px;
+    width: 490px;
+
+
+}
+
+
+img{
+    height:140px ;
+    width: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+td .acc{
+    border: 2px inset black;
+    background-color: orange;
+    width: 20%;
+    margin: 30px;
+
+}
+table #middle{
+    margin: auto;
+}
+
+
+p{
+    font-family: Arial;
+}
+
+p.bio{
+    text-align: center;
+    font-weight: bold;
+}
+
+img.hill{
+    border: 4px inset black;
+    padding: 4px;
+    margin: 4px;
+    height:140px ;
+    width: 100px;
+    float: left;
+}
+
+
+
+td#right{
+    border: 10px ridge orange;
+    background-color: darkblue;
+    font-family: Impact;
+}

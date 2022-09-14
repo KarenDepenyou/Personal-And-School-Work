@@ -1,0 +1,32 @@
+/*div{*/
+    /*border-radius: 25px;*/
+    /*border: 2px solid;*/
+/*}*/
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+
+}
+
+form{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+td.bingoSquares{
+    border-radius: 5px;
+    border: 2px solid;
+    /*width: 100%;*/
+}
+table#bBoard{
+    width: available;
+    height: available;
+
+}

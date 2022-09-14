@@ -1,0 +1,104 @@
+body {
+	background-color:AliceBlue;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ADFF2F;
+	border-radius: 12px;
+	width:850px;
+
+}
+.navbar{
+	background-color:#ADFF2F;
+	border: 0px solid #ADFF2F;
+    height: 5px; /*This is an example*/
+    margin: 0;
+    width: 100%;
+	border-radius:12px;
+	padding: 0px 160px;
+	word-wrap: normal;
+	display: inline-block;
+	color:#000033;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size: standard;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	color:#000033;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size: standard
+}
+
+li a:hover:not(.active) {
+    background-color: #200;
+}
+
+.images {
+	display: inline-block;
+	float: left;
+	margin: 5px;
+	/*padding:5px;*/
+	
+}
+
+.cool {
+	display:block;
+	float: center;
+	margin: auto;
+	
+	/*padding:5px;*/
+}
+/*tr {
+	border-width: 6px;
+	border-style: solid;
+	border-color: #FFFFFF;
+}*/
+button {
+	background-color:#ADFF2F;
+	border: none;
+	color: white;
+	padding:15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+h2 {
+	font-family:"Arial Black", Gadget, sans-serif;
+	border-width: 6px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	text-align: center;
+}
+p {
+	color:#000033;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+}
+h4 {
+	color:#000033;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size: 15px;
+	text-align:center;
+}
+td {
+	color:#000033;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: standard;
+}
+
+/*table {
+	background-color: #F0FFFF;
+}
+
+
