@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- head definitions go here -->
+        <title>Zinnia</title>
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1>Welcome to Zinnia!</h1>
+            </header>
+            <div class="container">
+                <h4>Select below the day and time you'd like to visit 
+                    and we'll let you know what your options are/</h4>
+                <div class="left_section">
+                    <h3>Enter a day and time </h3>
+                    <form action="zinnia" class="main_form">
+                        <div>
+                            <label for="day">Enter a Weekday</label>
+                            <input type="text" name="day" id="day" placeholder="Monday-Sunday"/>
+                        </div>
+                        <div>
+                            <label for="time">Enter Time</label>
+                            <input type="time" name="Time" id="time"/>
+                        </div>
+                        <button type="submit" id="get_info">Submit</button>
+                    </form>
+                </div>
+    
+                <div class="right_section">
+                    <h4>Zinnia Hours of Operation</h4>
+                    <h5>Mon & Tues: 8am-2pm<br> Weds-Sun: 8am-10pm</h5>
+                    <div id="services"></div>
+                    <div class="box" id="rest_List">
+                        <label for="resto">During this time you can...</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>
