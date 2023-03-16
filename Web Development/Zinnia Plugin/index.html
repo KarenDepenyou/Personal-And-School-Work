@@ -3,26 +3,26 @@
     <head>
         <!-- head definitions go here -->
         <title>Zinnia</title>
-
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
                 <h1>Welcome to Zinnia!</h1>
+                <h4>Select below the day and time you'd like to visit 
+                    and we'll let you know what your options are</h4>
             </header>
             <div class="container">
-                <h4>Select below the day and time you'd like to visit 
-                    and we'll let you know what your options are/</h4>
                 <div class="left_section">
                     <h3>Enter a day and time </h3>
-                    <form action="zinnia" class="main_form">
+                    <form action="zinnia" id="get_info" class="main_form">
                         <div>
                             <label for="day">Enter a Weekday</label>
                             <input type="text" name="day" id="day" placeholder="Monday-Sunday"/>
                         </div>
                         <div>
                             <label for="time">Enter Time</label>
-                            <input type="time" name="Time" id="time"/>
+                            <input type="time" name="time" id="time"/>
                         </div>
                         <button type="submit" id="get_info">Submit</button>
                     </form>

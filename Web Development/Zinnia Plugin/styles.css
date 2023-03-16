@@ -1,13 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex: 1;
+}
+
 .container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: row;
+}
   .left_section {
     background-color: #E6B0AA;
     justify-items: center;
     flex: 0 1 auto;
+    flex-direction: row;
     margin: 0.5rem;
     padding-bottom: 1.5rem;
     border: 2px dashed;
@@ -17,6 +28,7 @@
   .right_section {
     background-color: #E6B0AA;
     flex: 1 2 auto;
+    flex-direction: row;
     margin: 0.5rem;
     align-items: center;
     justify-content: center;
